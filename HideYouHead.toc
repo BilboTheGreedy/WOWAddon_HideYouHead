@@ -1,0 +1,6 @@
+## Interface: 70000
+## Title: HideYouHead
+## Author: Bilbo
+## Version: 1.0
+## SavedVariables: HUH_SavedVars
+main.lua
