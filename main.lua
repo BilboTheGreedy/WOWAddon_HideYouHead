@@ -7,7 +7,7 @@ local HUHFrame = CreateFrame("Frame")
 
 function HUHFrame:OnEvent(event, addon)
 
-		if event == "ADDON_LOADED" or event == "PLAYER_LOGIN" and HUH_SavedVars.auto then
+		if event == "PLAYER_LOGIN" and HUH_SavedVars.auto then
 		HUH_SavedVars.toggle = false
 		end	
 		
