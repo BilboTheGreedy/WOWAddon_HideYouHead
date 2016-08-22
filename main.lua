@@ -7,7 +7,7 @@ local HUHFrame = CreateFrame("Frame")
 
 function HUHFrame:OnEvent(event, addon)
 
-		if addon == "ADDON_LOADED" and HUH_SavedVars.auto then
+		if event == "ADDON_LOADED" or event == "PLAYER_LOGIN" and HUH_SavedVars.auto then
 		HUH_SavedVars.toggle = false
 		end	
 		
@@ -33,6 +33,7 @@ function HUHFrame:OnEvent(event, addon)
 	end
 end
 HUHFrame:RegisterEvent("ADDON_LOADED")
+HUHFrame:RegisterEvent("PLAYER_LOGIN")
 HUHFrame:SetScript("OnEvent", HUHFrame.OnEvent)
 
 SLASH_HUH1 = '/huh';
